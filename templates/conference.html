@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    AATSP CT - Annual Conference
+{% endblock %}
+
+{% block content %}
+    <div class="bar_lg">
+        CT Annual Conference Information - April 2023
+    </div>
+    <div class="container">
+        <h3 class="text-center">AATSP Connecticut Chapter Annual Conference at Wesleyan University</h3>
+        <div class="row">
+            <div class="col align-self-start">
+                <iframe src="https://www.youtube.com/embed/KFIcXI_rOGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col align-self-end">
+                <p>
+                    La Asociación de Profesores de Español y Portugués de
+                    Connecticut (AATSP-CT) se complace en invitar a todos sus miembros honorarios,
+                    activos y asociados, así como a los profesores, catedráticos, investigadores, intelectuales,
+                    profesionales de los medios de información, escritores, futuros profesores de español y
+                    portugués y estudiantes posgraduados y todos aquellos interesados en los estudios, la
+                    investigación y la difusión del humanismo hispánico y sus manifestaciones, a la
+                    conferencia que se celebrará el <strong>29 de abril, 2023 en Wesleyan University, Middletown,
+                    Connecticut.</strong>
+                    <br>
+                    <br>
+                    Este año hemos elegido el tema de ‘El impacto de la comunidad latina en la literatura, el
+                    arte, el cine y los medios de comunicación en los Estados Unidos’. Con esta idea lo que
+                    queremos es explorar nuevos acercamientos a este tema, con la riqueza de opciones que
+                    nos ofrece. Entre estas, queremos explorar cómo presentar el tema del impacto de la
+                    comunidad latina a nuestros estudiantes en el pasado, el presente y el futuro. Les
+                    invitamos a compartir sus ideas, proyectos, metodologías, etc. Se valorarán especialmente
+                    aquellas presentaciones que incorporen colaboración entre estudiantes y profesores.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bar_lg">
+        Registration Information
+    </div>
+    <h4 class="text-center"><a href="{% static 'docs/Conferencia_AATSP-CT2023.pdf' %}">Conference 2023 PDF</a></h4>
+    <iframe src="{% static 'docs/Conferencia_AATSP-CT2023.pdf' %}" class="container" style="height: 720px"></iframe>
+{% endblock %}

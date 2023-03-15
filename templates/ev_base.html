@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    AATSP CT - {{ specific_event.Title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container-sm">
+        <div class="bar_lg"></div>
+        <div class="text-center">
+            <h6>{{ specific_event.Title  }}</h6>
+        </div>
+        {{ specific_event.Body_description }}
+        {{ specific_event.MBody|safe }}
+    </div>
+{% endblock %}

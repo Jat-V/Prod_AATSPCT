@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    AATSP CT - Events
+{% endblock %}
+
+{% block content %}
+    <div class="bar_lg">Upcoming Events!</div>
+    <div class="container-sm" style="padding-bottom: 20px">
+        {% for event in active_events %}
+            <a class="event_box_a" href="details/{{ event.id }}">
+                <div class="event_box">
+                    <p style="font-size: 21px"><strong>{{ event.Title }}</strong> - {{ event.Description_small }}</p>
+                    <strong>Start: </strong>{{ event.Start_date }} &emsp; <strong>End: </strong>{{ event.End_date }}
+                </div>
+            </a>
+        {% endfor %}
+        <a class="event_box_a" href="/conference">
+            <div class="event_box">
+                <p style="font-size: 21px"><strong>2023 Annual Conference</strong> - AATSP CT Annual Conference</p>
+                <strong>Start: </strong>April 29, 2023 12:00pm  &emsp; <strong>End: </strong>April 29, 2023 5:00pm
+            </div>
+        </a>
+    </div>
+{% endblock %}

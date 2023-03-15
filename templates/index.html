@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    AATSP CT - Home
+{% endblock %}
+
+{% block content %}
+    <div class="bar_lg">
+        <span>Welcome! ¡Bienvenidos! Bem vindo!</span>
+    </div>
+    <div class="main_body">
+        <p>Welcome to CONNECTICUT Chapter of the American Association of Teachers of Spanish and Portuguese (AATSP)!
+            The AATSP promotes the study and teaching of the Spanish and Portuguese languages and their corresponding
+            Hispanic, Luso-Brazilian, and other related literatures, and cultures at all levels of education.
+            We are dedicated to the interaction of members through cultural and linguistic events, to support programs
+            and activities in the teaching and learning of Spanish and Portuguese, and to provide and sponsor Hispanic
+            cultural and linguistic opportunities to benefit our members and their students at all levels of education.
+            Our chapter Web Page is available for you to receive news of activities, conferences, meetings, membership
+            opportunities, etc. Please feel free to contact us if you have any announcements comments, ideas, news, or
+            suggestions which you would like to share with the membership. All for one and one for all.
+            <br>
+            <br>
+            Steven Strange <br>
+            President, CT Chapter AATSP
+        </p>
+    </div>
+    <div class="bar_lg">
+        <div class="row align-items-start">
+            <div class="col">Important Dates <i class="fa fa-calendar"></i></div>
+        </div>
+    </div>
+    <h4 class="text-center">{{ date }}</h4>
+    <div class="main_body">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <p>
+                    Here you will find events that are run by the AATSP CT organization. Listed are the events taking place in the coming week. Click on the events to view more details!
+                </p>
+            </div>
+            <div class="col-md-6 col-12">
+                <div id="event_list" class="list-group">
+                    {% for event in active_events %}
+                        <a href="/events/details/{{ event.id }}" class="list-group-item list-group-item-action">{{ event.Title }}</a>
+                    {% endfor %}
+                    <a href="/conference" class="list-group-item list-group-item-action">2023 Annual Conference</a>
+                    <!--<a href="#" class="list-group-item list-group-item-action">First link event</a>
+                    <a href="#" class="list-group-item list-group-item-action">Second link event</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_lg">
+        <span>November Event Gallery 2022</span>
+    </div>
+    <!--  -->
+    <div id="container" style="text-align: -webkit-center">
+        <div id="EventGall_carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#EventGall_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#EventGall_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#EventGall_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#EventGall_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="{% static 'images/EventPhoto1.JPG' %}" class="d-block w-100" alt="2021 Event photo 1">
+              <div class="carousel-caption d-none d-md-block">
+                <!--<h5>First slide</h5>-->
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="{% static 'images/EventPhoto2.JPG' %}" class="d-block w-100" alt="2021 Event photo 2">
+              <div class="carousel-caption d-none d-md-block">
+                <!--<h5>Second slide</h5>-->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/EventPhoto3.JPG' %}" class="d-block w-100" alt="2021 Event photo 3">
+              <div class="carousel-caption d-none d-md-block">
+                <!--<h5>Third slide</h5>-->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/EventPhoto4.JPG' %}" class="d-block w-100" alt="2021 Event photo 4">
+              <div class="carousel-caption d-none d-md-block">
+                <!--<h5>Fourth slide</h5>-->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#EventGall_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#EventGall_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    <!-- -->
+
+    <div class="page-mission">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 page-iframe">
+                    <div class="col-md-12 col-12 frame-head text-center">
+                        <div class="bar_lg">
+                            <span class="text-center frame-data">Connect with Us</span>
+                        </div>
+                    </div>
+                    <div id="event_list" class="list-group">
+                        <a class="list-group-item list-group-item-action text-center" href="https://www.facebook.com/AATSPglobal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="list-group-item list-group-item-action text-center" href="http://www.linkedin.com/company/2354100?trk=tyah&trkInfo=tas%3Aamerican%20association%20of%20teachers%20of%20%2Cidx%3A1-2-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="list-group-item list-group-item-action text-center" href="https://twitter.com/AATSPglobal" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="list-group-item list-group-item-action text-center" href="https://www.instagram.com/aatspglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12 mission">
+                    <div class="col-md-12 col-12 mission-head text-center">
+                        <div class="bar_lg">
+                            <span>AATSP Mission Statement</span>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <p>The American Association of Teachers of Spanish and Portuguese (AATSP) promotes the study and
+                            teaching of the Spanish and Portuguese languages and their corresponding Hispanic,
+                            Luso-Brazilian and other related literatures and cultures at all levels of education.
+                            The AATSP encourages, supports and directs programs and research projects involving the
+                            exchange of pedagogical and scholarly information. Through extensive collaboration with
+                            educators, professionals, and institutions in other countries, the AATSP contributes to a better
+                            and deeper understanding between the United States and the Spanish-and Portuguese-speaking
+                            nations of the world.The AATSP encourages, supports and directs programs and research projects
+                            involving the exchange of pedagogical and scholarly information. Through extensive collaboration
+                            with educators, professionals, and institutions in other countries, the AATSP contributes to a
+                            better and deeper understanding between the United States and the Spanish-and
+                            Portuguese-speaking nations of the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

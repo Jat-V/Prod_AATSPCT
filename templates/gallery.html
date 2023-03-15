@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/gallery.css' %}">
+{% endblock %}
+
+{% block title %}
+    AATSP CT - Gallery
+{% endblock %}
+
+{% block content %}
+    <div class="main_body">
+        <div class="container-sm">
+            <div class="bar_lg">
+                <span>Past Events</span>
+            </div>
+            <h5>2022 Annual Conference Photos</h5>
+            <div class="main_body">
+                <p>
+                    Photos taken from our annual conference last year held in Quinnipiac University.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-15.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-14.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-13-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-16-3.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-22-2.jpg' %}" style="width:100%" alt="">
+                </div>
+                <div class="column">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-09-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-16.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-12.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-17.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-19.jpg' %}" style="width:100%" alt="">
+                </div>
+                <div class="column">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-10.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-11.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-15-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-18.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-22.jpg' %}" style="width:100%" alt="">
+                </div>
+                <div class="column">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-13.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-08-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-14-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-19-2.jpg' %}" style="width:100%" alt="">
+                    <img src="{% static 'images/Annual_C_22/PHOTO-2023-01-22-15-39-19-3.jpg' %}" style="width:100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
