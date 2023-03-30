@@ -26,3 +26,8 @@ def conference(request):
 def gallery(request):
     contex = {'nav_uri_G': 'active'}
     return render(request, "gallery.html", contex)
+
+
+def programs(request):
+    context = {'nav_uri_P': 'active'}
+    return render(request, "programs.html", context)

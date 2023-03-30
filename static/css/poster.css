@@ -1,0 +1,43 @@
+.banner_art {
+    background-image: url("https://storage.googleapis.com/aatspct_prod_bucket/images/PosterContest_2023/Serapiglia_Cora_Doucette_9-12hand.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.banner_info {
+    text-align: center;
+}
+
+.banner_slogan {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.student_artwork {
+    padding-top: 20px;
+    width: 50%;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.student_artwork img {
+    width: -webkit-fill-available;
+}
+
+.student_author {
+    text-align: center;
+    padding-left: 10px;
+    min-width: -webkit-fill-available;
+}
+
+@media only screen and (max-device-width : 430px) {
+    .banner_art {
+        background-size: 100% 100%;
+        background-attachment: initial;
+    }
+}

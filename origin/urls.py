@@ -24,4 +24,5 @@ urlpatterns = [
     path('conference/', conference),
     path('events/', include('events.urls')),
     path('gallery/', gallery),
+    path('programs/', programs),
 ]

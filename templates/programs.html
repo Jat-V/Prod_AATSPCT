@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/poster.css' %}">
+{% endblock %}
+
+{% block title %}
+    AATSP CT - Programs & Activities
+{% endblock %}
+
+{% block banner %}
+    <div class="banner_art">
+        <h1 style="font-weight: bold">Poster Contest</h1>
+        <br>
+        <br>
+        <em>Cora Doucette, Amity Regional High School 9th-12th Hand-drawn Third place</em>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="main_body">
+        <div class="container-sm">
+            <div class="banner_info">
+                <h2>Connecticut 2023 Poster Contest</h2>
+                <div class="banner_slogan">
+                    <span>“Nuevos horizontes para la comunicación y la cultura”</span>
+                    <br>
+                    <span>“Novos horizontes para a comunicação e a cultura”</span>
+                </div>
+                <p>
+                    Each year the AATSP sponsors the Poster Contest that is open to K-12 Spanish and Portuguese
+                    students whose teachers are current AATSP members. Posters must first be sent to the local
+                    AATSP Chapter. Please contact your AATSP Chapter for Poster Contest deadlines.
+                </p>
+            </div>
+
+            <div class="bar_lg">
+                <span>9th-12th Hand-drawn Winners</span>
+            </div>
+
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/Serapiglia_Grace_Zhang_9-12hand.jpg' %}" alt="Grace Zhang 1st Place artwork">
+                <div class="student_author">
+                    <h4>First Place</h4>
+                    <span>Grace Zhang</span>
+                    <br>
+                    <span>Amity Regional High School</span>
+                </div>
+            </div>
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/IMG-3267.jpg' %}" alt="Carter Vanneck 2nd Place artwork">
+                <div class="student_author">
+                    <h4>Second Place</h4>
+                    <span>Carter Vanneck</span>
+                    <br>
+                    <span>Greenwich Country Day School</span>
+                </div>
+            </div>
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/Serapiglia_Cora_Doucette_9-12hand.jpg' %}" alt="Cora Doucette 3rd Place artwork">
+                <div class="student_author">
+                    <h4>Third Place</h4>
+                    <span>Cora Doucette</span>
+                    <br>
+                    <span>Amity Regional High School</span>
+                </div>
+            </div>
+
+            <div class="bar_lg">
+                <span>9th-12th Digital Winners</span>
+            </div>
+
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/Serapiglia_Karolina_Suarez_9-12digital.png' %}" alt="Karolina Suarez 1st Place artwork">
+                <div class="student_author">
+                    <h4>First Place</h4>
+                    <span>Karolina Suarez</span>
+                    <br>
+                    <span>Amity Regional High School</span>
+                </div>
+            </div>
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/Serapiglia_Leonardo_Tregger_9-12digital.png' %}" alt="Leonardo Tregger 2nd Place artwork">
+                <div class="student_author">
+                    <h4>Second Place</h4>
+                    <span>Leonardo Tregger</span>
+                    <br>
+                    <span>Amity Regional High School</span>
+                </div>
+            </div>
+            <div class="student_artwork">
+                <img src="{% static 'images/PosterContest_2023/Serapiglia_Alesandro_Gopal_9-12digital.jpg' %}" alt="Alesandro Gopal 3rd Place artwork">
+                <div class="student_author">
+                    <h4>Third Place</h4>
+                    <span>Alesandro Gopal</span>
+                    <br>
+                    <span>Amity Regional High School</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
